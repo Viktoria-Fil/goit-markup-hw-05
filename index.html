@@ -407,9 +407,24 @@
                     </li>
                 </ul>
             </div>
+            <div class="form-container">
+                <p class="subscribe">Subscribe</p>
+                <form class="footer-email">
+                    <label class="footer-label">
+                        <input class="footer-input" type="email" name="email" placeholder="E-mail" />
+                    </label>
+                    <button class="footer-botton" type="submit">Subscribe
+                        <svg class="footer-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-airplain"></use>
+                        </svg>
+                    </button>
+
+                </form>
+
+            </div>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
         <div class="modal">
             <button class="close-button" type="button">
                 <svg class="modal-close-icon" width="8" height="8">
@@ -422,7 +437,7 @@
                     <label class="modal-label" for="user-name">Name</label>
                     <div class="input-part">
                         <input class="feedback" type="text" name="user-name" id="user-name" required />
-                        <svg class="modal-icon" width="18" height="18">
+                        <svg class="modal-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-person-name"></use>
                         </svg>
                     </div>
@@ -445,20 +460,18 @@
                         </svg>
                     </div>
                 </div>
-                <div class="feedback-part">
+                <div class="feedback-part comment-part">
                     <label class="modal-label" for="user-comment">Comment
                     </label>
-                    <div class="input-part">
-                        <textarea class="forum-comment" type="text" name="user-comment" id="user-comment" required
-                            placeholder="Text input"></textarea>
-                    </div>
+                    <textarea class="forum-comment" name="user-comment" id="user-comment" required
+                        placeholder="Text input"></textarea>
                 </div>
                 <div class="form-checkbox">
-                    <input class="ckeckbox visually-hidden" type="checkbox" name="privacy-policy" id="privacy-policy"
+                    <input class="ckeckbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy"
                         value="true" required />
-                    <label class="ckeckbox-label" for="privacy-policy">
+                    <label class="ckeckbox-label" for="user-privacy">
                         <span class="form-custom-ckeckbox">
-                            <svg class="form-checkbox-item">
+                            <svg class="form-checkbox-item" width="10" height="8">
                                 <use href="./images/icons.svg#icon-ckeck-mark"></use>
                             </svg>
                         </span>
