@@ -133,7 +133,7 @@
                         <img class="img" src="./images/img-3.jpg" alt="Mark Guerrero" width="264" height="260">
                         <div class="container-team-name">
                             <h3 class="title"> Mark Guerrero</h3>
-                            <p class="text">Product Designer</p>
+                            <p class="text team-text">Product Designer</p>
                             <ul class="social-list">
                                 <li class="social-list-item">
                                     <a class="social-list-link" href="">
@@ -170,7 +170,7 @@
                         <img class="img" src="./images/img-2.jpg" alt="Tom Ford" width="264" height="260">
                         <div class="container-team-name">
                             <h3 class="title">Tom Ford</h3>
-                            <p class="text"> Frontend Developer</p>
+                            <p class="text team-text"> Frontend Developer</p>
                             <ul class="social-list">
                                 <li class="social-list-item">
                                     <a class="social-list-link" href="">
@@ -207,7 +207,7 @@
                         <img class="img" src="./images/img-1.jpg" alt="Camila Garcia" width="264" height="260">
                         <div class="container-team-name">
                             <h3 class="title">Camila Garcia</h3>
-                            <p class="text">Marketing</p>
+                            <p class="text team-text">Marketing</p>
                             <ul class="social-list">
                                 <li class="social-list-item">
                                     <a class="social-list-link" href="">
@@ -244,7 +244,7 @@
                         <img class="img" src="./images/img.jpg" alt="Daniel Wilson" width="264" height="260">
                         <div class="container-team-name">
                             <h3 class="title">Daniel Wilson</h3>
-                            <p class="text">UI Designer</p>
+                            <p class="text team-text">UI Designer</p>
                             <ul class="social-list">
                                 <li class="social-list-item">
                                     <a class="social-list-link" href="">
@@ -409,6 +409,68 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-open">
+        <div class="modal">
+            <button class="close-button" type="button">
+                <svg class="modal-close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-button"></use>
+                </svg>
+            </button>
+            <p class="modal-text">Leave your contacts and we will call you back</p>
+            <form class="review-form">
+                <div class="feedback-part">
+                    <label class="modal-label" for="user-name">Name</label>
+                    <div class="input-part">
+                        <input class="feedback" type="text" name="user-name" id="user-name" required />
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-person-name"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="feedback-part">
+                    <label class="modal-label" for="user-tel">Phone</label>
+                    <div class="input-part">
+                        <input class="feedback" type="tel" name="user-tel" id="user-tel" />
+                        <svg class="modal-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="feedback-part">
+                    <label class="modal-label" for="user-email">Email</label>
+                    <div class="input-part">
+                        <input class="feedback" type="email" name="user-email" id="user-email" />
+                        <svg class="modal-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="feedback-part">
+                    <label class="modal-label" for="user-comment">Comment
+                    </label>
+                    <div class="input-part">
+                        <textarea class="forum-comment" type="text" name="user-comment" id="user-comment" required
+                            placeholder="Text input"></textarea>
+                    </div>
+                </div>
+                <div class="form-checkbox">
+                    <input class="ckeckbox visually-hidden" type="checkbox" name="privacy-policy" id="privacy-policy"
+                        value="true" required />
+                    <label class="ckeckbox-label" for="privacy-policy">
+                        <span class="form-custom-ckeckbox">
+                            <svg class="form-checkbox-item">
+                                <use href="./images/icons.svg#icon-ckeck-mark"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the
+                        <a class="policy-link">Privacy Policy</a>
+                    </label>
+                </div>
+                <button class="modal-botton" type="submit">Send</button>
+            </form>
+
+        </div>
+    </div>
 </body>
 
 </html>
