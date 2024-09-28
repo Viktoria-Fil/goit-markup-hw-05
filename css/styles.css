@@ -451,7 +451,7 @@ a {
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
@@ -500,7 +500,7 @@ a {
   width: 408px;
   min-height: 584px;
   border-radius: 4px;
-
+  padding: 72px 24px 24px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -527,14 +527,19 @@ a {
   cursor: pointer;
 }
 
-.modal-close-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.close-button:hover {
+  background-color: #404bbf;
+  border: none;
+  fill: #fff;
 }
-
-.close-button:hover,
 .close-button:focus {
   background-color: #404bbf;
+  border: none;
   fill: #fff;
+}
+
+.modal-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text {
@@ -545,7 +550,6 @@ a {
   text-align: center;
   color: #2e2f42;
   position: absolute;
-  padding: 72px 24px 24px 24px;
   margin-bottom: 16px;
 }
 /*       form     */
@@ -677,7 +681,7 @@ a {
 .ckeckbox:checked + .ckeckbox-label > .form-custom-ckeckbox {
   background-color: #404bbf;
   border: none;
-  fill: #fdfdfd;
+  fill: #f4f4fd;
 }
 
 .ckeckbox:focus + .ckeckbox-label > .form-custom-ckeckbox {
